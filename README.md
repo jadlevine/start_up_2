@@ -28,3 +28,25 @@ then
 
 then
 cmd+C, cmd-V for all of .gitignore
+
+➜ startUpTwo git:(main) ✗ git add .
+➜ startUpTwo git:(main) ✗ git commit -m "Initial setup complete"
+
+➜ startUpTwo git:(main) cd client
+➜ client git:(main) ✗ npm install axios react-router-dom
+➜ client git:(main) ✗ npm install
+
+Add:
+"start": "node server.js",
+"dev": "nodemon server.js"
+to
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"start": "node server.js",
+"dev": "nodemon server.js"
+},
+in root/backend package.json
+
+FINALLY, connect to remote and push
+➜ client git:(main) ✗ git remote add origin git@github.com:jadlevine/start_up_2.git
+➜ client git:(main) ✗ git push origin main
